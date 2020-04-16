@@ -1,0 +1,35 @@
+# Script engine related, we want to know exctly how much garbage comes out of
+# the exhaust. How many cylinders does it have, revolutions per sec, how many 
+# strokes and so on. The amount of air that keeps enters the engine is what we
+# want to know.... Improve is what we want! We are going to focus on diesel 
+# engines. For now only focusing on 4 stroke engines and four cylinders!
+# You can use and edit the code... With best purposes
+
+#Air fuel/ratio - 14.5:1 (???) (14.5 parts of air to one of fuel)
+
+import time
+
+print('This script was made for a four stroke diesel engine with four cylinders')
+time.sleep(2)
+EC = input ('Whats your engine capacity (in cm3)? ')
+NC = input ('How many cylinders does it have? ')
+EC1 = int (EC)
+NC1 = int (NC)
+UC = EC1/NC1
+print('It has', round (UC, 2), 'cm3 of volume on each cylinder')
+RPM = input('Enter the number of revolutions per min (RPM): ')
+RPM1 = int (RPM)
+AD = ((RPM1*4) / (2)) / 4
+print ('Your car does' , round (AD, 2) ,'admissions for that RPM')
+ADS = AD/60
+print ('In one second it does',round (ADS, 2), 'admissions for that RPM')
+Q = UC/ float (15.5)
+print('That car needs, about',round((round(Q, 2)*14.5)*ADS, 2), 'cm3 of air in one second for that RPM')
+print (round (Q,2), 'cm3 are the parts for a 14.5:1 ratio')
+print('Which gives approximately', round (14.5*round(Q, 2), 2), 'cm3 of air and', round (Q), 'cm3 of fuel. At each admssion time')
+print ('Not counting with variable valve timming, nor variable compression ratios, top dead centers, residual air, tunning and so on...')
+Cc = input ('Press any key to continue:')
+
+# This was made for a diesel engine with that fuel/air ratio! There are others! As far as 
+# i know! Diesel is still safer, it burns at higher temperatures, you can always try to add
+# oxygen or hydrogen, depending on temperature... Either way... How do you decrease CO2 values? And other garbage?
