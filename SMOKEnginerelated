@@ -26,7 +26,7 @@ print ('In one second it does',round (ADS, 2), 'admissions for that RPM')
 Q = UC/ float (15.5)
 print('That car needs, about',round((round(Q, 2)*14.5)*ADS, 2), 'cm3 of air in one second for that RPM')
 print (round (Q,2), 'cm3 are the parts for a 14.5:1 ratio')
-print('Which gives approximately', round (14.5*round(Q, 2), 2), 'cm3 of air and', round (Q, 2), 'cm3 of fuel. At each admssion time')
+print('Which gives approximately', round (14.5*round(Q, 3), 3), 'cm3 of air and', round (Q, 3), 'cm3 of fuel. At each admssion time')
 print ('Not counting with variable valve timming, nor variable compression ratios, top dead centers, residual air, tunning and so on...')
 Cc = input ('Press any key to continue:')
 
