@@ -66,6 +66,7 @@ elif t == 31:
 else:
     print('Insert correct values')
 
+print (Wet air or dry air? Sunny or rainy?)
 print ('Whats the temperature of the engine block?')
 print ('Can you guess?')
 
