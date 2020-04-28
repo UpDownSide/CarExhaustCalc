@@ -50,8 +50,25 @@ elif x == 2500:
     print('O2 content at admission time is 15%')
 else:
     print('Insert correct values')
-T= input ('Whats the temperature inside and outside of the vehicle?')
-print ('let me do some math.... 1+1=2..... senx=???')
+
+
+t = int(input ("Whats the temperature outside of the vehicle (20/24/27/28/31)?"))
+if t == 20:
+    print('O2 content at admission time is the same!')
+elif t == 24:
+    print('O2 content at admission time is less 0.1%')
+elif t == 27:
+    print('O2 content at admission time is less 0.3%')
+elif t == 28:
+    print('O2 content at admission time is less 0.3%')
+elif t == 31:
+    print('O2 content at admission time is less 0.7%')
+else:
+    print('Insert correct values')
+
+print ('Whats the temperature of the engine block?')
+print ('Can you guess?')
+
 Cc = input ('Press any key to continue:')
 
 # this was made for a diesel engine with that fuel/air ratio! There are others! As far as 
