@@ -34,7 +34,7 @@ print('That car needs, about',round((round(Q, 3)*14.5)*ADS, 2), 'cm3 of air in o
 print (round (Q,2), 'cm3 are the parts for a 14.5:1 ratio')
 print('Which gives approximately', round (14.5*round(Q, 3), 3), 'cm3 of air and', round (Q, 3), 'cm3 of fuel. At each admssion time')
 
-x = int(input("Please enter altitude: "))
+x = int(input("Please enter altitude (500/1000/1500/2000/2500): "))
 
 if x == 0:
     print('O2 content at admission time is 21%')
